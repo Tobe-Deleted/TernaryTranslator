@@ -35,21 +35,23 @@ public class Translators
         foreach (char ch in str)
         {
             string trenaryBuilder = "00000";
+            int iterationValue = 81;
+            Console.WriteLine($"char {ch}");
+            int charValue = Convert.ToInt32(ch);
             for (int i = 0; i < 5; i++)
             {
-                int charValue = Convert.ToInt32(ch);
+                Console.WriteLine($"i = {i}");
                 int currentChar = 0;
                 for (int j = 0; j < 2; j++)
-                    Console.WriteLine(charValue);
-                    if (i == 0 && 81 <= charValue ||
-                        i == 1 && 27 <= charValue ||
-                        i == 2 && 9 <= charValue ||
-                        i == 3 && 3 <= charValue ||
-                        i == 4 && 1 <= charValue)
+                {
+                    Console.WriteLine($"CV:{charValue} IV:{iterationValue}");
+                    if (charValue >= iterationValue)
                     {
-                        charValue -= 81;
+                        charValue -= iterationValue;
                         currentChar += 1;
                     }
+                }
+                iterationValue /= 3;
                 trenaryBuilder = trenaryBuilder.Remove(i, 1).Insert(i, $"{currentChar}");
             }
             result += " " + trenaryBuilder;
