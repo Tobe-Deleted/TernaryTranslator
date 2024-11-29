@@ -28,4 +28,32 @@ public class Translators
         }
         return result;
     }
+
+    public string AsciiToTernary(string str)
+    {
+        string result = "";
+        foreach (char ch in str)
+        {
+            string trenaryBuilder = "00000";
+            for (int i = 0; i < 5; i++)
+            {
+                int charValue = Convert.ToInt32(ch);
+                int currentChar = 0;
+                for (int j = 0; j < 2; j++)
+                    Console.WriteLine(charValue);
+                    if (i == 0 && 81 <= charValue ||
+                        i == 1 && 27 <= charValue ||
+                        i == 2 && 9 <= charValue ||
+                        i == 3 && 3 <= charValue ||
+                        i == 4 && 1 <= charValue)
+                    {
+                        charValue -= 81;
+                        currentChar += 1;
+                    }
+                trenaryBuilder = trenaryBuilder.Remove(i, 1).Insert(i, $"{currentChar}");
+            }
+            result += " " + trenaryBuilder;
+        }
+        return result;
+    }
 }

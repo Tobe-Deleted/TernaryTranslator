@@ -38,8 +38,20 @@ class Program
             {
                 case ConsoleKey.D0:
                     return;
+
                 case ConsoleKey.D1:
+                    Console.Clear();
+                    while(true)
+                    {
+                        Console.WriteLine();
+                        Console.Write("Type in your ternary text: ");
+                        Translators Translate = new Translators();
+                        Console.WriteLine(Translate.AsciiToTernary(Console.ReadLine() ?? ""));
+                        if (!Checks.YesNo("Do you wish to translate more?"))
+                            break;
+                    }
                     break;
+
                 case ConsoleKey.D2:
                     Console.Clear();
                     while(true)

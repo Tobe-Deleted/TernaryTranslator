@@ -12,3 +12,4 @@ C:\Users\Olive\Documents\kodehode\TernaryTranslator\obj\Debug\net8.0\refint\Tren
 C:\Users\Olive\Documents\kodehode\TernaryTranslator\obj\Debug\net8.0\TrenaryTranslator.pdb
 C:\Users\Olive\Documents\kodehode\TernaryTranslator\obj\Debug\net8.0\TrenaryTranslator.genruntimeconfig.cache
 C:\Users\Olive\Documents\kodehode\TernaryTranslator\obj\Debug\net8.0\ref\TrenaryTranslator.dll
+C:\Users\Olive\Documents\kodehode\TernaryTranslator\obj\Debug\net8.0\TrenaryTranslator.sourcelink.json
