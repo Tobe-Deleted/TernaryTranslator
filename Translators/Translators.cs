@@ -11,19 +11,19 @@ public class Translators
             int positionalValue = 1;
             if(s.Length < 5)
             {
-                for(int i = 0; i < 5 - s.Length; i++)
+                for(int i = 0; i < 6 - s.Length; i++)
                 {
                     st = st.Insert(0, "0");
                 }
             }
 
-            for (int i = 4; i >= 0; i--)
+            for (int i = 5; i >= 0; i--)
             {
                 value += (st[i] -48) * positionalValue;
                 positionalValue *= 3;
             }
-            if (value > 127 || value < 0)
-                throw new ArgumentException($"{s} is outside of ASCII table (0 to 11201)");
+            if (value > 248 || value < 0)
+                throw new ArgumentException($"{s} is outside the ASCII table (0 to 100012)");
             result = result + Convert.ToChar(value);
         }
         return result;
@@ -34,17 +34,14 @@ public class Translators
         string result = "";
         foreach (char ch in str)
         {
-            string trenaryBuilder = "00000";
-            int iterationValue = 81;
-            Console.WriteLine($"char {ch}");
+            string trenaryBuilder = "000000";
+            int iterationValue = 243;
             int charValue = Convert.ToInt32(ch);
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 6; i++)
             {
-                Console.WriteLine($"i = {i}");
                 int currentChar = 0;
                 for (int j = 0; j < 2; j++)
                 {
-                    Console.WriteLine($"CV:{charValue} IV:{iterationValue}");
                     if (charValue >= iterationValue)
                     {
                         charValue -= iterationValue;

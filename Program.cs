@@ -22,6 +22,7 @@ class Program
                 break;
                 case ConsoleKey.D0:
                     exit = true;
+                    Console.Clear();
                     break;
             }
         }
@@ -33,6 +34,7 @@ class Program
             Console.Clear();
             Console.WriteLine("1. To Ternary");
             Console.WriteLine("2. From Ternary");
+            Console.WriteLine("0. Exit");
             ConsoleKey choice = Console.ReadKey().Key;
             switch (choice)
             {
@@ -44,7 +46,7 @@ class Program
                     while(true)
                     {
                         Console.WriteLine();
-                        Console.Write("Type in your ternary text: ");
+                        Console.Write("Type in your ASCII text: ");
                         Translators Translate = new Translators();
                         Console.WriteLine(Translate.AsciiToTernary(Console.ReadLine() ?? ""));
                         if (!Checks.YesNo("Do you wish to translate more?"))
@@ -56,10 +58,11 @@ class Program
                     Console.Clear();
                     while(true)
                     {
+                        Console.WriteLine();
                         Console.Write("Type in your ternary text: ");
                         Translators Translate = new Translators();
                         Console.WriteLine(Translate.TernaryToAscii(Console.ReadLine() ?? "0"));
-                        if (Checks.YesNo("Do you wish to translate more?"))
+                        if (!Checks.YesNo("Do you wish to translate more?"))
                             break;
                     }
                     break;
