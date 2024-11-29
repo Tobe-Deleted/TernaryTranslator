@@ -5,6 +5,7 @@ namespace TrenaryTranslator;
 
 class Program
 {
+    Checks Check = new Checks();
     static void Main(string[] args)
     {
         bool exit = false;
@@ -40,10 +41,15 @@ class Program
                 case ConsoleKey.D1:
                     break;
                 case ConsoleKey.D2:
-                    Console.Write("Type in your ternary text: ");
-                    Translators Translate = new Translators();
-                    Console.WriteLine(Translate.TernaryToAscii(Console.ReadLine() ?? "0"));
-                    
+                    Console.Clear();
+                    while(true)
+                    {
+                        Console.Write("Type in your ternary text: ");
+                        Translators Translate = new Translators();
+                        Console.WriteLine(Translate.TernaryToAscii(Console.ReadLine() ?? "0"));
+                        if (Checks.YesNo("Do you wish to translate more?"))
+                            break;
+                    }
                     break;
             }
         }
