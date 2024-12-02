@@ -1,3 +1,5 @@
+using System.Text;
+
 public class Translators
 {
     public string TernaryToAscii(string str)
@@ -53,6 +55,29 @@ public class Translators
             }
             result += " " + trenaryBuilder;
         }
+        return result;
+    }
+
+    public string AsciiToBinary(string str)
+    {
+        string result = "";
+        foreach (char ch in str)
+        {
+            string binaryBuilder = "00000000";
+            int iterationValue = 128;
+            int charValue = Convert.ToInt32(ch);
+            for (int i = 0; i < 8; i++)
+            {
+                if (charValue >= iterationValue)
+                {
+                    charValue -= iterationValue;
+                    binaryBuilder = binaryBuilder.Remove(i, 1).Insert(i, "1");
+                }
+                iterationValue /= 2;
+            }
+            result += " " + binaryBuilder;
+        }
+
         return result;
     }
 }
