@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using System.Linq.Expressions;
 using System.Security.Cryptography;
 
 namespace TrenaryTranslator;
@@ -12,8 +13,11 @@ class Program
         while(!exit)
         {
             Console.Clear();
-            Console.WriteLine("1. Ternary Translator");
+            Console.WriteLine("Code solver 3.0.3");
+            Console.WriteLine("Choose an option:");
+            Console.WriteLine("1. Caesar Shift");
             Console.WriteLine("2. Binary Translator");
+            Console.WriteLine("3. Ternary Translator");
             Console.WriteLine("0. Exit");
             ConsoleKey choice = Console.ReadKey().Key;
             switch(choice)
@@ -23,7 +27,7 @@ class Program
                     Console.Clear();
                     break;
                 case ConsoleKey.D1:
-                    //CaesarMenu();
+                    CaesarMenu();
                     break;
                 case ConsoleKey.D2:
                     BinaryMenu();
@@ -120,4 +124,30 @@ class Program
         }
     }
 
+    static void CaesarMenu()
+    {
+        Translators Translate = new Translators();
+        while(true)
+        {
+            int shift;
+            Console.Clear();
+            Console.Write("Type in text to shift: ");
+            string text = (Console.ReadLine() ?? "0").ToLower();
+            Console.Write("Type in number of shifts: ");
+            try
+            {
+                shift = Convert.ToInt32(Console.ReadLine());
+            }
+            catch
+            {
+                Console.Clear();
+                Console.WriteLine("Shift must be a number");
+                Console.ReadKey();
+                continue;
+            }
+            Translate.CaesarCipher(text, shift);
+            if (!Checks.YesNo("Do you wish to shift a new string?"))
+                break;
+        }
+    }
 }
