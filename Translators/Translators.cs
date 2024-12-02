@@ -184,14 +184,14 @@ public class Translators
                     int chValue = CharToInt[ch];
                     chValue += n;
                     if (chValue > maxShift +1)
-                        chValue += - maxShift +1;
+                        chValue -= maxShift +1; //No clue how this works, but it does.
                     result += IntToChar[chValue];
                 }
                 else
                     result += ch;
             }
-            if(n == 29) Console.WriteLine("Shift: 0");
-            else Console.WriteLine($"Shift: {n}");
+            
+            Console.WriteLine($"Shift: {n}");
             if (norwegian)Console.WriteLine($"Using the Norwegian alphabet");
             else Console.WriteLine($"Using the English alphabet");
             Console.WriteLine("-------------------------------------------------------------------------------------------------------------------");
@@ -209,8 +209,6 @@ public class Translators
                     n += 1;
                     break;
                 case ConsoleKey.UpArrow:
-                    Console.Clear();
-                    Console.ReadKey();
                     if (norwegian)norwegian = false;
                     else norwegian = true;
                     break;

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TrenaryTranslator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4172faa339e203e90a9531201642d63fb8016447")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ba33ec090383e646decbfc2657022347a5b1248d")]
 [assembly: System.Reflection.AssemblyProductAttribute("TrenaryTranslator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TrenaryTranslator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

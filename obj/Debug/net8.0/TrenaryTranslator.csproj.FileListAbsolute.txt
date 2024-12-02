@@ -13,3 +13,18 @@ C:\Users\Olive\Documents\kodehode\TernaryTranslator\obj\Debug\net8.0\TrenaryTran
 C:\Users\Olive\Documents\kodehode\TernaryTranslator\obj\Debug\net8.0\TrenaryTranslator.genruntimeconfig.cache
 C:\Users\Olive\Documents\kodehode\TernaryTranslator\obj\Debug\net8.0\ref\TrenaryTranslator.dll
 C:\Users\Olive\Documents\kodehode\TernaryTranslator\obj\Debug\net8.0\TrenaryTranslator.sourcelink.json
+C:\Users\olli9\VSC\Personlig prosjekter\TernaryTranslator\bin\Debug\net8.0\TrenaryTranslator.exe
+C:\Users\olli9\VSC\Personlig prosjekter\TernaryTranslator\bin\Debug\net8.0\TrenaryTranslator.deps.json
+C:\Users\olli9\VSC\Personlig prosjekter\TernaryTranslator\bin\Debug\net8.0\TrenaryTranslator.runtimeconfig.json
+C:\Users\olli9\VSC\Personlig prosjekter\TernaryTranslator\bin\Debug\net8.0\TrenaryTranslator.dll
+C:\Users\olli9\VSC\Personlig prosjekter\TernaryTranslator\bin\Debug\net8.0\TrenaryTranslator.pdb
+C:\Users\olli9\VSC\Personlig prosjekter\TernaryTranslator\obj\Debug\net8.0\TrenaryTranslator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\olli9\VSC\Personlig prosjekter\TernaryTranslator\obj\Debug\net8.0\TrenaryTranslator.AssemblyInfoInputs.cache
+C:\Users\olli9\VSC\Personlig prosjekter\TernaryTranslator\obj\Debug\net8.0\TrenaryTranslator.AssemblyInfo.cs
+C:\Users\olli9\VSC\Personlig prosjekter\TernaryTranslator\obj\Debug\net8.0\TrenaryTranslator.csproj.CoreCompileInputs.cache
+C:\Users\olli9\VSC\Personlig prosjekter\TernaryTranslator\obj\Debug\net8.0\TrenaryTranslator.sourcelink.json
+C:\Users\olli9\VSC\Personlig prosjekter\TernaryTranslator\obj\Debug\net8.0\TrenaryTranslator.dll
+C:\Users\olli9\VSC\Personlig prosjekter\TernaryTranslator\obj\Debug\net8.0\refint\TrenaryTranslator.dll
+C:\Users\olli9\VSC\Personlig prosjekter\TernaryTranslator\obj\Debug\net8.0\TrenaryTranslator.pdb
+C:\Users\olli9\VSC\Personlig prosjekter\TernaryTranslator\obj\Debug\net8.0\TrenaryTranslator.genruntimeconfig.cache
+C:\Users\olli9\VSC\Personlig prosjekter\TernaryTranslator\obj\Debug\net8.0\ref\TrenaryTranslator.dll
