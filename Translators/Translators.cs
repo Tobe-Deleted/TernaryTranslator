@@ -99,4 +99,34 @@ public class Translators
         }
         return result;
     }
+
+    public void CaesarCipher(string str, int n)
+    {
+        while (true)
+        {
+            bool norwegian = true;
+            Console.WriteLine($"Shift: {n}");
+            Console.WriteLine($"Using the {(norwegian ? "Norwegian" : "Englsh")} alphabet");
+            Console.WriteLine("| - shift: (arrow left) <--   |   + shift: (arrow right) --> |");
+            Console.WriteLine("change alphabet: (arrow up) ^ | exit: (zero) 0");
+            ConsoleKey CipherShift = Console.ReadKey().Key;
+            switch (CipherShift)
+            {
+                case ConsoleKey.LeftArrow:
+                    n -= 1;
+                    if(n < 0) n = 29;
+                    break;
+                case ConsoleKey.RightArrow:
+                    n += 1;
+                    break;
+                case ConsoleKey.UpArrow:
+                    if (norwegian)norwegian = false;
+                    else norwegian = true;
+                    break;
+                case ConsoleKey.D0:
+                    return;
+                
+            }
+        }
+    }
 }

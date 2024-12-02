@@ -23,10 +23,13 @@ class Program
                     Console.Clear();
                     break;
                 case ConsoleKey.D1:
-                    TernaryMenu();
+                    //CaesarMenu();
                     break;
                 case ConsoleKey.D2:
                     BinaryMenu();
+                    break;
+                case ConsoleKey.D3:
+                    TernaryMenu();
                     break;
             }
         }
