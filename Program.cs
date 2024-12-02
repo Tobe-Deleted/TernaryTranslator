@@ -108,7 +108,7 @@ class Program
                         Console.WriteLine();
                         Console.Write("Type in your binary text: ");
                         Translators Translate = new Translators();
-                        //Console.WriteLine(Translate.BinaryToAscii(Console.ReadLine() ?? "0"));
+                        Console.WriteLine(Translate.BinaryToAscii(Console.ReadLine() ?? "0"));
                         if (!Checks.YesNo("Do you wish to translate more?"))
                             break;
                     }

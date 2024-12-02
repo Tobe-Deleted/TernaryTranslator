@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using System.Text;
 
 public class Translators
@@ -78,6 +79,24 @@ public class Translators
             result += " " + binaryBuilder;
         }
 
+        return result;
+    }
+
+    public string BinaryToAscii(string str)
+    {
+        string result = "";
+        string[] strArr = str.Split(' ');
+        foreach (string s in strArr)
+        {
+            int charValue = 0;
+            int iterationValue = 128;
+            for(int i = 0; i < 8; i++)
+            {
+                charValue += Convert.ToInt32(s[i] -48) * iterationValue; 
+                iterationValue /= 2;
+            }
+            result += Convert.ToChar(charValue);
+        }
         return result;
     }
 }
